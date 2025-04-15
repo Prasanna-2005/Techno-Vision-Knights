@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "14475000000010047",
+      "name": "MCM-CLIENT-BACKEND",
+      "domain": {
+        "id": "50025756479",
+        "name": "mcm-client-backend-60039527058.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60039527058",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
