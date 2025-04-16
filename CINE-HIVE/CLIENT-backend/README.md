@@ -45,7 +45,7 @@ The application uses the following main tables:
 - **reviews**: Store user reviews with approval status
 
 ## File Structure
-
+```
 movie-catalog-app/
 ├── backend/
 │   ├── config/         # Database and environment configuration
@@ -58,7 +58,7 @@ movie-catalog-app/
 |   │── package-lock.json
 |   │── server.js
 |
-
+```
 
 ## Getting Started
 
