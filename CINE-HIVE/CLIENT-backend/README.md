@@ -17,19 +17,10 @@ A comprehensive web application for managing a movie database with admin and use
   - Implements middleware for authentication, validation, etc.
   - Manages routing and controller logic
 - **MySQL2**: Modern MySQL client for Node.js
-- **JWT**: JSON Web Tokens for authentication
+- **Http-Cookies**: Cookie based authentication
+- **CLOUDINARY**: Hosting images
 - **Multer**: Middleware for handling file uploads
 
-### Frontend
-- **React**: JavaScript library for building user interfaces
-  - Component-based architecture for reusable UI elements
-  - Virtual DOM for efficient rendering
-- **React Router**: Client-side routing for single-page application
-- **Tailwind CSS**: Utility-first CSS framework
-  - Enables rapid UI development
-  - Provides responsive design utilities
-  - Minimal bundle size with purging unused styles
-- **Axios**: Promise-based HTTP client for API requests
 
 ## Features
 
@@ -55,7 +46,6 @@ The application uses the following main tables:
 
 ## File Structure
 
-```
 movie-catalog-app/
 ├── backend/
 │   ├── config/         # Database and environment configuration
@@ -68,19 +58,7 @@ movie-catalog-app/
 |   │── package-lock.json
 |   │── server.js
 |
-└── frontend/
-    ├── public/         # Static assets
-    └── src/
-    |    ├── components/ # Reusable UI components
-    |    ├── contexts/   # React Context for state management
-    |    ├── hooks/      # Custom React hooks
-    |    ├── pages/      # Page components
-    |    ├── services/   # API integration
-    |    ├── App.js      # Main component
-    |    └── index.js    # Entry point
-    │── package.json
-    |── package-lock.json
-```
+
 
 ## Getting Started
 
@@ -101,7 +79,7 @@ movie-catalog-app/
 - Frontend development server runs on port 3000
 - Local MySQL instance with configured user/password
 
-## Image Storage Strategy
+## Image Storage Strategy [ DURING DEVELOPMENT] --> FINALLY HOSTED AT CLOUDINARY
 
 Images are stored as files in the filesystem or cloud storage, with only the references (paths/URLs) stored in the database. This approach:
 - Keeps the database efficient
@@ -110,7 +88,7 @@ Images are stored as files in the filesystem or cloud storage, with only the ref
 
 ## Authentication
 
-The application uses JWT (JSON Web Tokens) for authentication:
+The application uses Cookie tokens for authentication:
 - Tokens are issued upon successful login
 - Role-based access control for admin vs regular users
 - Secure routes using authentication middleware
