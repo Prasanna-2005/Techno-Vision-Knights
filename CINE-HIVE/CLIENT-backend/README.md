@@ -1,3 +1,8 @@
+```
+STEP 1 : npm install
+STEP 2 : configure .env
+STEP 3 :npm run dev
+```
 # Movie Catalog Web Application
 
 A comprehensive web application for managing a movie database with admin and user roles, review functionality, and responsive design.
