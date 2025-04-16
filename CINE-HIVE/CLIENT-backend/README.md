@@ -1,7 +1,7 @@
 ```
 STEP 1 : npm install
 STEP 2 : configure .env
-STEP 3 :npm run dev
+STEP 3 : npm run dev
 ```
 # Movie Catalog Web Application
 
